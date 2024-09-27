@@ -1,0 +1,540 @@
+<!-- Designed by Tooplate -->
+<!-- Improved by Jamewel Bane -->
+
+<!doctype html>
+<html lang="en">
+<link rel="shortcut icon" type="image/png" href="images/icon/favicon.png">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Jamewel</title>
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/unicons.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+  <!-- modal project css -->
+  <link rel="stylesheet" href="css/project-modal.css">
+
+  <!-- MAIN STYLE -->
+  <link rel="stylesheet" href="css/tooplate-style.css">
+
+  <!-- sweetalert -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+
+
+  <style>
+    body.loading,
+    html.loading {
+      overflow: hidden;
+    }
+
+    .loading-spinner {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 9999;
+    }
+
+    .blurred {
+      filter: blur(5px);
+      pointer-events: none;
+      /* Disable interaction with blurred content */
+    }
+
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000000;
+      transition: opacity 0.5s ease;
+      pointer-events: none;
+    }
+
+
+    @media (max-width: 992px) {
+
+      .swiper-button-next,
+      .swiper-button-prev {
+        display: none;
+      }
+    }
+  </style>
+
+
+
+</head>
+<!-- Preloader overlay -->
+<div class="overlay" id="preloader">
+  <l-quantum size="100" speed="1.75" color="#ffc200"></l-quantum>
+</div>
+
+<body>
+
+
+  <!-- Navigation -->
+  <!-- MENU -->
+  <nav class="navbar navbar-expand-sm navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><i class='uil uil-user'></i> Jamewel</a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a href="#about" class="nav-link"><span data-hover="About">About</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="#project" class="nav-link"><span data-hover="Projects">Projects</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="#resume" class="nav-link"><span data-hover="Resume">Resume</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="#footer" class="nav-link"><span data-hover="Contact">Contact</span></a>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav ml-lg-auto">
+          <div class="ml-lg-4">
+            <div class="color-mode d-lg-flex justify-content-center align-items-center">
+              <i class="color-mode-icon"></i>
+              Color mode
+            </div>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- About -->
+
+  <div id="about"></div>
+
+  <!-- Projects -->
+
+  <section class="project py-5" id="project">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-11 text-center mx-auto col-12">
+          <div class="col-lg-8 mx-auto">
+            <h2>
+              Web Applications I have developed through out my academic journey
+            </h2>
+          </div>
+
+          <div class="owl-carousel owl-theme">
+            <a href="#" data-toggle="modal" data-target="#projectModal">
+              <div class="item">
+                <div class="project-info">
+                  <img src="images/project/1920snkrs.png" class="img-fluid" alt="project image" />
+                </div>
+              </div>
+            </a>
+
+
+            <a href="#" data-toggle="modal" data-target="#projectModalQuizQuest">
+              <div class="item">
+                <div class="project-info">
+                  <img src="images/project/quizquest.png" class="img-fluid" alt="project image" />
+                </div>
+              </div>
+            </a>
+
+            <a href="#" data-toggle="modal" data-target="#projectModalBshs">
+              <div class="item">
+                <div class="project-info">
+                  <img src="images/project/bshs.png" class="img-fluid" alt="project image" />
+                </div>
+              </div>
+            </a>
+
+            <!-- <a href="https://qrgenerate.hungrydev.site/" target="_blank">
+            <div class="item">
+              <div class="project-info">
+                <img src="images/project/qrgenerator.png" class="img-fluid" alt="project image" />
+              </div>
+            </div>
+          </a> -->
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+  </section>
+
+
+  <div id="features"></div>
+  <div id="footer"></div>
+
+
+
+  <script>
+    // Function to load external HTML files
+    function loadHTML(file, elementId) {
+      fetch(file)
+        .then(response => response.text())
+        .then(data => document.getElementById(elementId).innerHTML = data)
+        .catch(error => console.error('Error loading file:', error));
+    }
+
+    // Load HTML files into their respective containers
+
+    loadHTML('public/about.html', 'about');
+
+
+    loadHTML('public/features.html', 'features');
+
+    loadHTML('public/footer.html', 'footer');
+  </script>
+
+
+
+  <div class="loading-spinner">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/ldrs/dist/auto/bouncy.js"></script>
+    <l-bouncy size="150" speed="1.75" color="#ffc200"></l-bouncy>
+  </div>
+
+
+ 
+
+
+
+
+
+  <!-- l-quantum script -->
+  <script type="module" src="https://cdn.jsdelivr.net/npm/ldrs/dist/auto/quantum.js"></script>
+
+  <!-- Modals -->
+  <!-- Modal -->
+
+  <div class="modal fade custom-modal" id="projectModal" tabindex="-1" role="dialog" aria-labelledby="projectModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="projectModalLabel">1920snkrs</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- Swiper -->
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="images/project-img/1920snkrs/11.png" alt="Slide 1"></div>
+              <div class="swiper-slide"><img src="images/project-img/1920snkrs/10.png" alt="Slide 2"></div>
+              <div class="swiper-slide"><img src="images/project-img/1920snkrs/9.png" alt="Slide 3"></div>
+              <div class="swiper-slide"><img src="images/project-img/1920snkrs/8.png" alt="Slide 4"></div>
+              <div class="swiper-slide"><img src="images/project-img/1920snkrs/7.png" alt="Slide 5"></div>
+              <div class="swiper-slide"><img src="images/project-img/1920snkrs/6.png" alt="Slide 6"></div>
+              <div class="swiper-slide"><img src="images/project-img/1920snkrs/admin1.png" alt="Slide 7"></div>
+              <div class="swiper-slide"><img src="images/project-img/1920snkrs/admin2.png" alt="Slide 8"></div>
+              <div class="swiper-slide"><img src="images/project-img/1920snkrs/admin3.png" alt="Slide 9"></div>
+            </div>
+
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- Add Navigation -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+
+          <p class="description"><strong>Description:</strong> 1920snkrs is a modern web application designed for
+            sneaker enthusiasts looking to
+            purchase authentic sneakers. The platform offers a seamless shopping experience, allowing users to browse,
+            search, and
+            buy from a wide range of sneakers. It features a robust admin site for managing inventory, orders, and
+            customer data,
+            ensuring smooth operation and excellent customer service.</p>
+
+          <p class="technologies-title"><strong>Key Features:</strong></p>
+          <ul class="list-group">
+            <li class="list-group-item"><strong>User-Friendly Interface:</strong> A clean and intuitive client-side
+              interface that makes browsing and purchasing sneakers easy and enjoyable.</li>
+            <li class="list-group-item"><strong>Admin Dashboard:</strong> Comprehensive admin tools for managing
+              products, tracking sales, and analyzing customer data.</li>
+            <li class="list-group-item"><strong>Responsive Design:</strong> Fully responsive layout ensuring optimal
+              performance on both desktop and mobile devices.</li>
+            <li class="list-group-item"><strong>Secure Transactions:</strong> Implementing the latest security measures
+              to protect user data and ensure safe transactions.</li>
+            <li class="list-group-item"><strong>Search and Filter:</strong> Advanced search and filtering options to
+              help users find their desired sneakers quickly.</li>
+            <li class="list-group-item"><strong>Real-Time Email Notifications:</strong> Automated email notifications
+              keep customers updated on their order status, from purchase confirmation to shipping and delivery updates.
+            </li>
+          </ul>
+
+
+          <p class="technologies-title"><strong>Technologies Used:</strong></p>
+          <ul class="technologies-list">
+            <li><i class="fab fa-html5"></i> HTML</li>
+            <li><i class="fab fa-css3-alt"></i> CSS</li>
+            <li><i class="fab fa-js"></i> JavaScript</li>
+            <li><i class="fab fa-bootstrap"></i> Bootstrap</li>
+            <li><i class="fas fa-database"></i> SQL</li>
+            <li><i class="fab fa-php"></i> PHP</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <a href="http://1920snkrs.shop/" target="_blank" class="btn btn-primary">Visit Site</a>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Modal 2 -->
+
+  <!-- Modal -->
+  <div class="modal fade custom-modal" id="projectModalBshs" tabindex="-1" role="dialog"
+    aria-labelledby="projectModalBshsLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="projectModalBshsLabel">Attendance System</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- Swiper -->
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="images/project-img/bshs/b1.png" alt="Slide 1"></div>
+              <div class="swiper-slide"><img src="images/project-img/bshs/b2.png" alt="Slide 2"></div>
+              <div class="swiper-slide"><img src="images/project-img/bshs/b3.png" alt="Slide 3"></div>
+              <div class="swiper-slide"><img src="images/project-img/bshs/b4.png" alt="Slide 4"></div>
+              <div class="swiper-slide"><img src="images/project-img/bshs/b5.png" alt="Slide 5"></div>
+              <div class="swiper-slide"><img src="images/project-img/bshs/b6.png" alt="Slide 6"></div>
+              <div class="swiper-slide"><img src="images/project-img/bshs/b7.png" alt="Slide 7"></div>
+              <div class="swiper-slide"><img src="images/project-img/bshs/b8.png" alt="Slide 8"></div>
+              <div class="swiper-slide"><img src="images/project-img/bshs/b9.png" alt="Slide 9"></div>
+              <div class="swiper-slide"><img src="images/project-img/bshs/b10.png" alt="Slide 10"></div>
+              <div class="swiper-slide"><img src="images/project-img/bshs/b11.png" alt="Slide 11"></div>
+            </div>
+
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- Add Navigation -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+
+          <!-- Text Content -->
+          <p class="description"><strong>Description:</strong> The Attendance Monitoring System for Buting Senior High
+            School is an innovative solution designed to enhance the efficiency and accuracy of attendance tracking
+            using QR codes. This system caters to four types of users: teachers, parents, students, and administrators.
+            By leveraging real-time data and automated notifications, the system aims to improve overall attendance
+            monitoring and communication within the school community.</p>
+
+          <p class="technologies-title"><strong>Key Features:</strong></p>
+          <ul class="list-group">
+            <li class="list-group-item"><strong>QR Code Scanning:</strong> Students use QR codes for quick and accurate
+              attendance marking, reducing manual entry errors.</li>
+            <li class="list-group-item"><strong>Real-Time Parent Notifications:</strong> Every time a QR code is
+              scanned, an automatic email is sent to parents, providing instant updates on their child's attendance
+              status.</li>
+            <li class="list-group-item"><strong>Weekly Attendance Reports:</strong> Parents receive a weekly summary
+              report of their child's attendance, allowing them to track performance over time.</li>
+            <li class="list-group-item"><strong>Teacher Tools:</strong> Teachers can generate School Form 2 (SF2),
+              required by DepEd, directly from the system. Additionally, they can make announcements, assign homework,
+              and contact parents as needed.</li>
+            <li class="list-group-item"><strong>Admin Dashboard:</strong> Administrators have access to comprehensive
+              tools for managing users, viewing overall attendance statistics, and maintaining the system.</li>
+            <li class="list-group-item"><strong>User-Friendly Interface:</strong> The system is designed with an
+              intuitive interface for easy navigation and use by all user types.</li>
+          </ul>
+
+          <p class="technologies-title"><strong>Technologies Used:</strong></p>
+          <ul class="technologies-list">
+            <li><i class="fab fa-html5"></i> HTML</li>
+            <li><i class="fab fa-css3-alt"></i> CSS</li>
+            <li><i class="fab fa-js"></i> JavaScript</li>
+            <li><i class="fab fa-bootstrap"></i> Bootstrap</li>
+            <li><i class="fas fa-database"></i> SQL</li>
+            <li><i class="fab fa-php"></i> PHP</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <a href="https://butingshs.com/" target="_blank" class="btn btn-primary">Visit Site</a>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3 -->
+  <!-- Modal -->
+  <div class="modal fade custom-modal" id="projectModalQuizQuest" tabindex="-1" role="dialog"
+    aria-labelledby="projectModalQuizQuestLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="projectModalQuizQuestLabel">QuizQuest</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- Swiper -->
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="images/project-img/quizquest/qq1.png" alt="Slide 1"></div>
+              <div class="swiper-slide"><img src="images/project-img/quizquest/qq2.png" alt="Slide 2"></div>
+              <div class="swiper-slide"><img src="images/project-img/quizquest/qq3.png" alt="Slide 3"></div>
+              <div class="swiper-slide"><img src="images/project-img/quizquest/qq4.png" alt="Slide 4"></div>
+              <div class="swiper-slide"><img src="images/project-img/quizquest/qq5.png" alt="Slide 5"></div>
+              <div class="swiper-slide"><img src="images/project-img/quizquest/qq6.png" alt="Slide 6"></div>
+              <div class="swiper-slide"><img src="images/project-img/quizquest/qq7.png" alt="Slide 7"></div>
+              <div class="swiper-slide"><img src="images/project-img/quizquest/qq8.png" alt="Slide 8"></div>
+              <div class="swiper-slide"><img src="images/project-img/quizquest/qq9.png" alt="Slide 9"></div>
+              <div class="swiper-slide"><img src="images/project-img/quizquest/qq10.png" alt="Slide 9"></div>
+            </div>
+
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- Add Navigation -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+
+          <p class="description"><strong>Description:</strong> QuizQuest is an engaging web application designed to
+            offer an
+            interactive and secure quiz-taking experience. This platform allows users to participate in quizzes on
+            various topics, while providing administrators with the tools to create, manage, and customize quizzes.
+            With a focus on security, QuizQuest ensures the integrity of the quiz experience by implementing strict
+            measures that prevent users from refreshing or exiting the quiz portal. If a user attempts to leave or
+            refresh the quiz,
+            it will automatically end, regardless of completion status.</p>
+
+          <p class="technologies-title"><strong>Key Features:</strong></p>
+          <ul class="list-group">
+            <li class="list-group-item"><strong>Interactive Quizzes:</strong> Users can take quizzes on a variety of
+              topics with an intuitive interface that makes the experience enjoyable and educational.</li>
+            <li class="list-group-item"><strong>Admin Tools:</strong> Administrators can create and manage quizzes,
+              customize questions, and track user performance with a comprehensive backend dashboard.</li>
+            <li class="list-group-item"><strong>Security Measures:</strong> Strict security protocols ensure that users
+              cannot refresh or exit the quiz portal without ending the quiz, preserving the accuracy of results.</li>
+            <li class="list-group-item"><strong>Responsive Design:</strong> Optimized for both desktop and mobile
+              devices, providing a seamless experience across all platforms.</li>
+            <li class="list-group-item"><strong>Real-Time Feedback:</strong> Instant feedback on quiz performance,
+              helping users learn and improve.</li>
+          </ul>
+
+
+          <p class="technologies-title"><strong>Technologies Used:</strong></p>
+          <ul class="technologies-list">
+            <li><i class="fab fa-html5"></i> HTML</li>
+            <li><i class="fab fa-css3-alt"></i> CSS</li>
+            <li><i class="fab fa-js"></i> JavaScript</li>
+            <li><i class="fab fa-bootstrap"></i> Bootstrap</li>
+            <li><i class="fas fa-database"></i> SQL</li>
+            <li><i class="fab fa-php"></i> PHP</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <a href="https://quizquest.hungrydev.site/" target="_blank" class="btn btn-primary">Visit Site</a>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      // Add any additional options if needed
+    });
+  </script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      document.getElementById('downloadResume').addEventListener('click', function(event) {
+          event.preventDefault(); // Prevent the default action
+          
+          // Create an invisible anchor element
+          var link = document.createElement('a');
+          link.href = 'resume/Jamewel_Bane_CV.pdf';
+          link.download = 'Jamewel_Bane_CV.pdf'; // Specify the name of the file to be downloaded
+          
+          // Append the link to the body
+          document.body.appendChild(link);
+          
+          // Programmatically click the link to trigger the download
+          link.click();
+          
+          // Remove the link from the document
+          document.body.removeChild(link);
+      });
+  });
+</script>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/Headroom.js"></script>
+<script src="js/jQuery.headroom.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/custom.js"></script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script src="js/index-script.js"></script>
+</body>
+
+</html>
